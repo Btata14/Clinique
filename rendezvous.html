@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre RDV - Clinique Lumière</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Clinique Lumière</a>
+            <nav class="nav"> 
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="equipe.html">Notre équipe</a></li>
+                    <li><a href="rendezvous.html" class="active">Rendez-vous</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+    <section class="appointment">
+        <div class="container">
+            <div class="appointment-header">
+                <h1>Prendre rendez-vous</h1>
+                <p class="section-intro">Remplissez le formulaire ci-dessous pour demander un rendez-vous. Notre équipe vous contactera pour confirmer.</p>
+            </div>
+            
+            <div class="appointment-content">
+                <form class="rdv-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="service">Service demandé</label>
+                        <select id="service" name="service" required>
+                            <option value="">-- Sélectionnez un service --</option>
+                            <option value="general">Médecine générale</option>
+                            <option value="pediatrie">Pédiatrie</option>
+                            <option value="cardiologie">Cardiologie</option>
+                            <option value="dermatologie">Dermatologie</option>
+                            <option value="gynecologie">Gynécologie</option>
+                            <option value="imagerie">Imagerie médicale</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="doctor">Médecin préféré (optionnel)</label>
+                        <select id="doctor" name="doctor">
+                            <option value="">-- Aucune préférence --</option>
+                            <option value="dr-martin">Dr. Sophie Martin</option>
+                            <option value="dr-lefevre">Dr. Jean Lefèvre</option>
+                            <option value="dr-dubois">Dr. Amélie Dubois</option>
+                            <option value="dr-leroy">Dr. Thomas Leroy</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Date souhaitée</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message supplémentaire</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                </form>
+                
+                <div class="appointment-info">
+                    <h3>Informations importantes</h3>
+                    <ul>
+                        <li>Nous vous contacterons dans les 24 heures pour confirmer votre rendez-vous</li>
+                        <li>Présentez-vous 10 minutes avant l'heure du rendez-vous</li>
+                        <li>Pensez à apporter votre carte vitale et vos documents médicaux</li>
+                    </ul>
+                    
+                    <div class="emergency-contact">
+                        <h3>Urgences médicales ?</h3>
+                        <p>Appeler <a href="tel:+212 618330907">06 18 33 09 07</a> ou présentez-vous directement à la clinique</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
